@@ -26,6 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2spr device
 $(call inherit-product, device/samsung/d2spr/device.mk)
 
+PRODUCT_COPY_FILES += device/samsung/d2-common/rootdir/etc/init:root/init
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_d2spr
 PRODUCT_DEVICE := d2spr
